@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { ContactForm } from './ContactForm/ContactForm';
 import { ContactList } from './ContactList/ContactList';
 import { Filter } from './Filter/Filter';
@@ -71,17 +71,17 @@ export function App () {
   //   );
   // };
 
-    const filterContants = (filtered) => {
-    // const { contacts, filter } = this.state;
-    // const normalizedFilter = filtered.toLowerCase();
-    setContacts(prevState => (prevState.filter(({ name }) =>
-    name.toLowerCase().includes(filtered.toLowerCase())
-    )))
-    // console.log(normalizedFilter)
-    // return contacts.filter(({ name }) =>
-    //   name.toLowerCase().includes(normalizedFilter)
-    // );
-  };
+  //   const filterContants = (filtered) => {
+  //   // const { contacts, filter } = this.state;
+  //   // const normalizedFilter = filtered.toLowerCase();
+  //   setContacts(prevState => (prevState.filter(({ name }) =>
+  //   name.toLowerCase().includes(filtered.toLowerCase())
+  //   )))
+  //   // console.log(normalizedFilter)
+  //   // return contacts.filter(({ name }) =>
+  //   //   name.toLowerCase().includes(normalizedFilter)
+  //   // );
+  // };
 
     return (
       <Section>
